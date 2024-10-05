@@ -8,6 +8,13 @@
     padding: 0px;
 }
 
+
+.active{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+
 /* From Uiverse.io by eslam-hany */ 
 /* From Uiverse.io by dylanharriscameron */ 
 .card {
@@ -15,7 +22,7 @@
   width: 380px;
   height: 400px;
   border-radius: 14px;
-  z-index: 1111;
+  z-index: 49;
   overflow: hidden;
   display: flex;
   flex-direction: column;

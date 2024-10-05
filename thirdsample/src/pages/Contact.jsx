@@ -1,36 +1,64 @@
-import { useState } from "react";
 import Navbar from '../components/Navbar';
+import Github from '../assets/img/github.jpeg';
+import Linkedin from '../assets/img/linkedIn.png';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
-  const [visible,setvisible] = useState(false);
   return (
     <>
-    <Navbar/>
-    {
-    visible&&(
-      <>
-      <div className="h-screen w-screen absolute top-0 left-0 bg-black/20 flex justify-center items-center z-50">
-        <div className="h-[40%] w-[30%] bg-red z-50 flex flex-col bg-white">
-          <div className="w-full h-[20%] flex flex-row justify-center items-center border-2">
-            Delete?
+      <Navbar />
+      <div className='flex justify-center'>
+        <div className='h-96 w-96 bg-slate-400 mt-16 flex flex-col items-center justify-center rounded-lg shadow-2xl'>
+         
+        <a href='mailto:yukendranofficial2004@gmail.com'>
+          <div className='h-10 w-80 bg-red-700 m-3 flex justify-center items-center rounded-lg'>
+            <h1>Mailid : yukendranofficial2004@gmail.com</h1>
           </div>
-          <div className="w-full h-[60%] flex flex-row justify-center items-center">
-            Are u sure?
+        </a>
+
+          <a href='tel:9994491604'>
+            <div className='h-10 w-80 bg-red-700 m-3 flex justify-center items-center rounded-lg'>
+              <h1 className=''>Mobile: 9994491604</h1>
+            </div>
+          </a>
+
+        <a href='https://github.com/iamyuken'>
+          <div className='h-10 w-80 bg-red-700 m-3 flex justify-center items-center rounded-lg'>
+            <img src={Github} alt="git" className="rounded-full h-7 w-7 mr-8" />
+            <h3>Github</h3>
           </div>
-          <div className="w-full h-[20%] flex flex-row justify-center items-center">
-            <button onClick={() => setvisible(!visible)} className="bg-red-600 p-3 text-white w-1/2 h-full rounded-md">Close</button>
-            <button onClick={() => setvisible(!visible)} className="bg-green-600 p-3 text-white w-1/2 h-full rounded-md">Open</button>
+        </a>
+
+        <a href='https://www.linkedin.com/in/yukendranm/'>
+          <div className='h-10 w-80 bg-red-700 m-3 flex justify-center items-center rounded-lg'>
+            <img src={Linkedin} alt="linkedin" className="rounded-full h-7 w-7 mr-8" />
+            <h3>Linkedin</h3>
           </div>
+        </a>
         </div>
       </div>
-      </>
-    )
-  }
-  <div className="h-[80vh] w-screen flex justify-center items-center -z-10">
-     <button onClick={() => setvisible(true)} className="bg-red-600 p-3 text-white w-32 rounded-md">Delete</button>
-  </div>
-  </>
+    </>
   )
 }
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // <a href='https://github.com/iamyuken'>
+          // </a>
+          //   Github
+          //   <img src={Github} alt="git" className="rounded-full h-7 w-7 mr-8" />
